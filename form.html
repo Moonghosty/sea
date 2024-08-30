@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade de recomposição Melissa Schiavone Cardoso - SP311600X</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/resultado" method="POST">
+        <h1>Atividade de recomposição Melissa Schiavone Cardoso - SP311600X</h1>
+        <label for="desenvolvedor">Desenvolvedor:</label><br>
+        <input type="text" id="desenvolvedor" name="desenvolvedor"><br><br>
+
+        <label for="turma">Turma:</label><br>
+        <input type="text" id="turma" name="turma"><br><br>
+
+        <label for="professor">Professor:</label><br>
+        <input type="text" id="professor" name="professor"><br><br>
+
+        <label for="data">Data:</label><br>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label for="dificuldade">Nota de Dificuldade:</label><br>
+        <input type="number" id="dificuldade" name="dificuldade" min="0" max="10"><br><br>
+
+        <label for="confianca">Confiante?</label><br>
+        <input type="text" id="confianca" name="confianca"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
